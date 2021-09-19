@@ -1,80 +1,140 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Time</title>
+    <!-- FAVICON -->
+    <link rel="shortcut icon" href="Assets/images/favicon-32x32.png" type="image/x-icon">
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Time tracking dashboard</title>
+    <!-- FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap" rel="stylesheet">
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+    <!-- STYLE -->
+    <link rel="stylesheet" href="Assets/style/style.css">
 </head>
-<body>
+<body onload="onload()">
+    <div class="container">
+        <div class="menu template">
+            <div class="text template">
+                <div class="img-container">
+                    <img src="Assets/images/image-jeremy.png" alt="Jeremy Robson">
+                </div>
 
-  Report for
-  Jeremy Robson
+                <span>
+                    Report from
+                </span>
 
-  Daily
-  Weekly
-  Monthly
+                <h2>
+                    Jeremy Robson
+                </h2>
+            </div>
 
-  Work
-  5hrs <!-- daily -->
-  Previous - 7hrs <!-- daily -->
-  32hrs <!-- weekly -->
-  Previous - 36hrs <!-- weekly -->
-  103hrs <!-- monthly -->
-  Previous - 128hrs <!-- monthly -->
+            <nav>
+                <ul>
+                    <li id="daily" onclick="dailyFunction(ele1,ele2,ele3,ele4,ele5,ele6, daily, weekly, monthly)">
+                        Daily
+                    </li>
+                    
+                    <li id="weekly" onclick="weeklyFunction(ele1,ele2,ele3,ele4,ele5,ele6, daily, weekly, monthly)">
+                        Weekly
+                    </li>
+                    
+                    <li id="monthly" onclick="monthlyFunction(ele1,ele2,ele3,ele4,ele5,ele6, daily, weekly, monthly)">
+                        Monthly
+                    </li>
+                </ul>
+            </nav>
+        </div>
 
-  Play
-  1hr <!-- daily -->
-  Previous - 2hrs <!-- daily -->
-  10hrs <!-- weekly -->
-  Previous - 8hrs <!-- weekly -->
-  23hrs <!-- monthly -->
-  Previous - 29hrs <!-- monthly -->
+        <div class="work template padrao">
+            <div class="img-container template">
+                <img src="Assets/images/icon-work.svg" alt="Maketa">
+            </div>
 
-  Study
-  0hrs <!-- daily -->
-  Previous - 1hr <!-- daily -->
-  4hrs <!-- weekly -->
-  Previous - 7hrs <!-- weekly -->
-  13hrs <!-- monthly -->
-  Previous - 19hrs <!-- monthly -->
+            <h2>
+                Work
 
-  Exercise
-  1hr <!-- daily -->
-  Previous - 1hr <!-- daily -->
-  4hrs <!-- weekly -->
-  Previous - 5hrs <!-- weekly -->
-  11hrs <!-- monthly -->
-  Previous - 18hrs <!-- monthly -->
+                <img src="Assets/images/icon-ellipsis.svg" alt="elipsis">
+            </h2>
 
-  Social
-  1hr <!-- daily -->
-  Previous - 3hrs <!-- daily -->
-  5hrs <!-- weekly -->
-  Previous - 10hrs <!-- weekly -->
-  21hrs <!-- monthly -->
-  Previous - 23hrs <!-- monthly -->
+            <span  id="element1"></span>
+        </div>
 
-  Self Care
-  0hrs <!-- daily -->
-  Previous - 1hr <!-- daily -->
-  2hrs <!-- weekly -->
-  Previous - 2hrs <!-- weekly -->
-  7hrs <!-- monthly -->
-  Previous - 11hrs <!-- monthly -->
+        <div class="play template padrao">
+            <div class="img-container template">
+                <img src="Assets/images/icon-play.svg" alt="game">
+            </div>
 
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
+            <h2>
+                Play
+
+                <img src="Assets/images/icon-ellipsis.svg" alt="elipsis">
+            </h2>
+
+            <span id="element2"></span>
+        </div>
+
+        <div class="study template padrao">
+            <div class="img-container template">
+                <img src="Assets/images/icon-study.svg" alt="Book">
+            </div>
+
+            <h2>
+                Study
+
+                <img src="Assets/images/icon-ellipsis.svg" alt="elipsis">
+            </h2>
+
+            <span id="element3"></span>
+        </div>
+
+        <div class="exercise template padrao">
+            <div class="img-container template">
+                <img src="Assets/images/icon-exercise.svg" alt="Maketa">
+            </div>
+
+            <h2>
+                Exercise
+
+                <img src="Assets/images/icon-ellipsis.svg" alt="elipsis">
+            </h2>
+
+            <span id="element4"></span>
+        </div>
+
+        <div class="social template padrao">
+            <div class="img-container template">
+                <img src="Assets/images/icon-social.svg" alt="Maketa">
+            </div>
+
+            <h2>
+                Social
+
+                <img src="Assets/images/icon-ellipsis.svg" alt="elipsis">
+            </h2>
+
+            <span id="element5"> </span>
+        </div>
+
+        <div class="self-care template padrao">
+            <div class="img-container template">
+                <img src="Assets/images/icon-self-care.svg" alt="Maketa">
+            </div>
+
+            <h2>
+                Self Care
+
+                <img src="Assets/images/icon-ellipsis.svg" alt="elipsis">
+            </h2>
+
+            <span id="element6"></span>
+        </div>
+    </div>
+
+    <script src="Assets/JS/script.js" defer></script>
 </body>
 </html>
