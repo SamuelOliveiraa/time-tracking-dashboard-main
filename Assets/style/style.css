@@ -63,6 +63,7 @@ body{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    transition: background .2s;
 }
 .padrao:hover{
     background: var(--desaturated-blue);
@@ -96,6 +97,7 @@ body{
 .padrao strong{
     font-size: 2rem;
     font-weight: 100;
+
 }
 .padrao .img-container img{
     display: none;
